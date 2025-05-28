@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "Two",
+			"Name": "TwoGame",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

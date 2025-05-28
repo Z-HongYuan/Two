@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class TwoTarget : TargetRules
+public class TwoClientTarget : TargetRules
 {
-	public TwoTarget(TargetInfo Target) : base(Target)
+	public TwoClientTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Game;
+		Type = TargetType.Client;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("Two");
+		ExtraModuleNames.Add("TwoGame");
 	}
 }
