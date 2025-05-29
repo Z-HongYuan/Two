@@ -3,4 +3,4 @@
 #include "TwoGame.h"
 #include "Modules/ModuleManager.h"
 
-IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, TwoGame, "TwoGame" );
+IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, TwoGame, "TwoGame");

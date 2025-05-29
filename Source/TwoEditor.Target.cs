@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class TwoEditorTarget : TargetRules
 {
-	public TwoEditorTarget( TargetInfo Target) : base(Target)
+	public TwoEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
