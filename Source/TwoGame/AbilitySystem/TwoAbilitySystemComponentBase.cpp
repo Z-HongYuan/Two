@@ -2,7 +2,6 @@
 
 
 #include "TwoAbilitySystemComponentBase.h"
-
 #include "AbilitySystemLog.h"
 #include "Ability/TwoGameplayAbilityBase.h"
 
