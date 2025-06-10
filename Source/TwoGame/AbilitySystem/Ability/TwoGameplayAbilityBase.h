@@ -23,6 +23,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "0_InputTag")
 	FGameplayTag InputTag = FGameplayTag();
 
+	//判定是否需要Held中每帧触发
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "0_InputTag")
 	bool bIsNeedHeld = false;
 
