@@ -9,7 +9,7 @@ public class TwoClientTarget : TargetRules
 	{
 		Type = TargetType.Client;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;
 		ExtraModuleNames.Add("TwoGame");
 	}
 }
