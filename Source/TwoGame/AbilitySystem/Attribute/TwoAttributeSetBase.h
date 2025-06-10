@@ -28,7 +28,7 @@
 
 /*
  * 基类Attribute
- * 带有基础的血量值
+ * 带有基础的血量值和移动速度并且限制数值
  */
 UCLASS()
 class TWOGAME_API UTwoAttributeSetBase : public UAttributeSet
