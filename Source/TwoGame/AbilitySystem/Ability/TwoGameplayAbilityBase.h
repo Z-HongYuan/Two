@@ -21,7 +21,10 @@ public:
 
 	//InputTag,用于判断输入
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "0_InputTag")
-	FGameplayTag InputTag;
+	FGameplayTag InputTag = FGameplayTag();
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "0_InputTag")
+	bool bIsNeedHeld = false;
 
 	//输入释放操作,从ASC触发
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnInputReleased"), Category = "Ability")

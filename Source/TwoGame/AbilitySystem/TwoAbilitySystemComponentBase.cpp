@@ -69,10 +69,13 @@ void UTwoAbilitySystemComponentBase::AbilityInputTagHeld(const FGameplayTag& Inp
 	{
 		if (AbilitySpec.GetDynamicSpecSourceTags().HasTagExact(InputTag))
 		{
-			AbilitySpecInputPressed(AbilitySpec); //通知Ability内的输入按下
-			if (!AbilitySpec.IsActive())
+			if (const UTwoGameplayAbilityBase* TwoAbility = Cast<UTwoGameplayAbilityBase>(AbilitySpec.Ability))
 			{
-				TryActivateAbility(AbilitySpec.Handle); //并且如果能力未被激活,就每帧激活一次
+				if (TwoAbility->bIsNeedHeld and !AbilitySpec.IsActive())
+				{
+					AbilitySpecInputPressed(AbilitySpec); //通知Ability内的输入按下
+					TryActivateAbility(AbilitySpec.Handle); //并且如果能力未被激活,就激活一次
+				}
 			}
 		}
 	}

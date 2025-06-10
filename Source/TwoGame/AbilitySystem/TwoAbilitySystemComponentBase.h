@@ -26,7 +26,7 @@ public:
 	/*
 	 * 包括Pressed, Held, Released
 	 * Pressed:尝试调用一次技能并且通知技能按下
-	 * Held:尝试每帧调用一次技能并且通知技能按下
+	 * Held:如果技能需要Held则尝试每帧调用一次技能并且通知技能按下
 	 * Released:通知技能释放
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Gameplay Abilities")
