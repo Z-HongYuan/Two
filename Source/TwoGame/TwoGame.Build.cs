@@ -11,12 +11,13 @@ public class TwoGame : ModuleRules
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
 			"Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", //基础模块
-			"GameplayTags","GameplayTasks","GameplayAbilities",
+			"GameplayTags", "GameplayTasks", "GameplayAbilities",
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
 			"CommonUI",
+			"GameplayCameras",
 		});
 
 		// Uncomment if you are using Slate UI
