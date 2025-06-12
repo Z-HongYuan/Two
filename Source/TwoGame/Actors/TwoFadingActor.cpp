@@ -2,7 +2,6 @@
 
 
 #include "TwoFadingActor.h"
-#include "TwoGame/Character/TwoCharacterBase.h"
 
 
 ATwoFadingActor::ATwoFadingActor()
@@ -22,10 +21,10 @@ void ATwoFadingActor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (ATwoCharacterBase* CharacterBase = Cast<ATwoCharacterBase>(GetOwner()))
+	if (SourceMesh)
 	{
-		PoseableMesh->SetSkinnedAssetAndUpdate(CharacterBase->GetCoverMesh()->GetSkeletalMeshAsset());
-		PoseableMesh->CopyPoseFromSkeletalComponent(CharacterBase->GetCoverMesh());
+		PoseableMesh->SetSkinnedAssetAndUpdate(SourceMesh->GetSkeletalMeshAsset());
+		PoseableMesh->CopyPoseFromSkeletalComponent(SourceMesh);
 
 		//淡化前的延迟
 		GetWorldTimerManager().SetTimer(FadeStartDelayTimerHandle, this, &ThisClass::FadeStartDelay, 1, false, FadeStartDelayTime);

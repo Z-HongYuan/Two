@@ -19,28 +19,32 @@ class TWOGAME_API ATwoFadingActor : public AActor
 public:
 	ATwoFadingActor();
 
+	//需要复制的网格体
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
+	TObjectPtr<USkeletalMeshComponent> SourceMesh;
+
 	//材质淡出的开始值,默认为-1
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
 	float FadeMaterialStartValue;
 
 	//材质淡出的结束值,默认为1
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
 	float FadeMaterialEndValue;
 
-	//需要修改的材质参数值名称,默认为为"BodyAlphaControl"
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade")
+	//需要修改的材质参数值名称,默认为为"FadingAlphaControl"
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
 	FName FadeMaterialName;
 
 	//淡出开始前等待的延迟,默认为1
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
 	float FadeStartDelayTime;
 
 	//淡出完成后结束延迟,最后销毁,默认为1
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
 	float FadeEndDelayTime;
 
 	//淡化速度
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fade", meta=(ExposeOnSpawn="true"))
 	float FadeSpeed;
 
 protected:
