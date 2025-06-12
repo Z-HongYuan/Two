@@ -3,8 +3,8 @@
 
 #include "TwoEnemyBase.h"
 
-
-ATwoEnemyBase::ATwoEnemyBase()
+ATwoEnemyBase::ATwoEnemyBase(const FObjectInitializer& ObjectInitializer):
+	Super(ObjectInitializer.SetDefaultSubobjectClass<UTwoCMC>(ACharacter::CharacterMovementComponentName))
 {
 	PrimaryActorTick.bCanEverTick = true;
 

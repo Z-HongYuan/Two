@@ -2,11 +2,11 @@
 
 
 #include "TwoPlayerBase.h"
-
 #include "TwoGame/Gameplay/PlayerState/TwoPlayerStateBase.h"
 
+ATwoPlayerBase::ATwoPlayerBase(const FObjectInitializer& ObjectInitializer):
+	Super(ObjectInitializer.SetDefaultSubobjectClass<UTwoCMC>(ACharacter::CharacterMovementComponentName))
 
-ATwoPlayerBase::ATwoPlayerBase()
 {
 	PrimaryActorTick.bCanEverTick = true;
 

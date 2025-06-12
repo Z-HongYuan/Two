@@ -19,7 +19,7 @@ class TWOGAME_API ATwoPlayerBase : public ATwoCharacterBase
 	GENERATED_BODY()
 
 public:
-	ATwoPlayerBase();
+	ATwoPlayerBase(const FObjectInitializer& ObjectInitializer);
 
 protected:
 	virtual void BeginPlay() override;

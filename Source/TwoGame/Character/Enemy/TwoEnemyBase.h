@@ -16,7 +16,7 @@ class TWOGAME_API ATwoEnemyBase : public ATwoCharacterBase
 	GENERATED_BODY()
 
 public:
-	ATwoEnemyBase();
+	ATwoEnemyBase(const FObjectInitializer& ObjectInitializer);
 
 protected:
 	virtual void BeginPlay() override;
