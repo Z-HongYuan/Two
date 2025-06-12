@@ -32,7 +32,7 @@ protected:
 
 	virtual void PossessedBy(AController* NewController) override;
 
-	//仅限拥有的客户端
+	//仅限拥有的客户端,用于设置Camera
 	UFUNCTION(BlueprintCallable, Client, Reliable)
 	void SetupCamera_RunOnClient();
 	void SetupCamera_RunOnClient_Implementation();

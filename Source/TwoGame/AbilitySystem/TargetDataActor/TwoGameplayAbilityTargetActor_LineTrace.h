@@ -6,6 +6,9 @@
 #include "TwoGameplayAbilityTargetActor_Trace.h"
 #include "TwoGameplayAbilityTargetActor_LineTrace.generated.h"
 
+/*
+ * 用于获取目标数据的Actor
+ */
 UCLASS()
 class TWOGAME_API ATwoGameplayAbilityTargetActor_LineTrace : public ATwoGameplayAbilityTargetActor_Trace
 {

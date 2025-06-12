@@ -7,6 +7,10 @@
 #include "GameFramework/Actor.h"
 #include "TwoFadingActor.generated.h"
 
+/*
+ * 渐隐的Actor
+ * 复制Owner的Mesh,并且通过材质参数控制材质的透明度实现淡入淡出
+ */
 UCLASS()
 class TWOGAME_API ATwoFadingActor : public AActor
 {

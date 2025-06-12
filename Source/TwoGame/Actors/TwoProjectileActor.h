@@ -8,6 +8,10 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "TwoProjectileActor.generated.h"
 
+/*
+ * 抛射物Actor
+ * 带有移动组件,Mesh,碰撞体
+ */
 UCLASS()
 class TWOGAME_API ATwoProjectileActor : public AActor
 {

@@ -13,7 +13,8 @@ class UInputMappingContext;
 class UTwoInputDataAsset;
 
 /**
- * 
+ * 带有基础输入的玩家控制器
+ * 实现ASC的输入触发
  */
 UCLASS()
 class TWOGAME_API ATwoPlayerControllerBase : public APlayerController

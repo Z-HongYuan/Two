@@ -10,7 +10,7 @@
 #include "TwoPlayerStateBase.generated.h"
 
 /**
- * 
+ * 针对于网络复制的ASC组件
  */
 UCLASS()
 class TWOGAME_API ATwoPlayerStateBase : public APlayerState, public IAbilitySystemInterface

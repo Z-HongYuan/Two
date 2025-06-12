@@ -7,6 +7,11 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "TwoGameplayAbilityTargetActor_Trace.generated.h"
 
+/*
+ * 用于获取目标数据的Actor
+ * 覆写ASC自带的TargetActor
+ * 带有自定义的射击数据
+ */
 UCLASS()
 class TWOGAME_API ATwoGameplayAbilityTargetActor_Trace : public AGameplayAbilityTargetActor
 {

@@ -6,7 +6,10 @@
 #include "Components/SceneComponent.h"
 #include "TwoSDFComponent.generated.h"
 
-
+/*
+ * 用于特定Mesh上使用的SDF组件
+ * 需要材质支持SDF
+ */
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class TWOGAME_API UTwoSDFComponent : public USceneComponent
 {

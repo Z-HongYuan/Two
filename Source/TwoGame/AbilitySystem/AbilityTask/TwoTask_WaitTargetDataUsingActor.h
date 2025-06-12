@@ -13,6 +13,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FTWaitTargetDataUsingActorDelegate, 
  * 这个是用于蓝图使用的TargetActorData委托
  * 异步任务节点
  * 用传入的Actor来获取由Actor生成的目标数据
+ * 传入Actor主要是使用Weapon中自带的TargetActor
  */
 UCLASS()
 class TWOGAME_API UTwoTask_WaitTargetDataUsingActor : public UAbilityTask

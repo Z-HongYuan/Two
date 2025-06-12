@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "TwoWeaponBase.h"
 #include "Components/ActorComponent.h"
 #include "TwoWeaponComponent.generated.h"
 
@@ -14,6 +15,9 @@ class TWOGAME_API UTwoWeaponComponent : public UActorComponent
 
 public:
 	UTwoWeaponComponent();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<TSubclassOf<ATwoWeaponBase>> WeaponArray;
 
 protected:
 	virtual void BeginPlay() override;

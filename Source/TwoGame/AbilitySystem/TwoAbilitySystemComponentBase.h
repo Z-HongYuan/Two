@@ -6,7 +6,10 @@
 #include "AbilitySystemComponent.h"
 #include "TwoAbilitySystemComponentBase.generated.h"
 
-
+/*
+ * 带有自定义的输入处理
+ * 针对于带有InputTag的Ability的输入处理
+ */
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class TWOGAME_API UTwoAbilitySystemComponentBase : public UAbilitySystemComponent
 {
