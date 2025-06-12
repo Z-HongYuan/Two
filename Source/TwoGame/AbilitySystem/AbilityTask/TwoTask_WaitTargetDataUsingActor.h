@@ -7,7 +7,7 @@
 #include "Abilities/Tasks/AbilityTask.h"
 #include "TwoTask_WaitTargetDataUsingActor.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOWaitTargetDataUsingActorDelegate, const FGameplayAbilityTargetDataHandle&, Data);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FTWaitTargetDataUsingActorDelegate, const FGameplayAbilityTargetDataHandle&, Data);
 
 /**
  * 这个是用于蓝图使用的TargetActorData委托
@@ -21,13 +21,13 @@ class TWOGAME_API UTwoTask_WaitTargetDataUsingActor : public UAbilityTask
 
 public:
 	UPROPERTY(BlueprintAssignable)
-	FOWaitTargetDataUsingActorDelegate ValidData;
+	FTWaitTargetDataUsingActorDelegate ValidData;
 
 	UPROPERTY(BlueprintAssignable)
-	FOWaitTargetDataUsingActorDelegate Cancelled;
+	FTWaitTargetDataUsingActorDelegate Cancelled;
 
 	UFUNCTION(BlueprintCallable, Category="Ability|Tasks", meta = (
-		DisplayName="GenshinTask_WaitTargetDataUsingActor",
+		DisplayName="TwoTask_WaitTargetDataUsingActor",
 		HidePin = "OwningAbility",
 		DefaultToSelf = "OwningAbility",
 		BlueprintInternalUseOnly = "TRUE",

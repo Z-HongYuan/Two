@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/CapsuleComponent.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "TwoProjectileActor.generated.h"
@@ -17,6 +18,9 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile")
+	TObjectPtr<UCapsuleComponent> CollisionComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Projectile")
 	TObjectPtr<UStaticMeshComponent> ProjectileMesh;
